@@ -61,6 +61,17 @@
 
 ***
 
-##
+## Subscribe button
+
+--나는 이제 "Subscribe" 버튼을 만들었는데 .....<img width="462" alt="Screenshot 2023-02-22 at 4 50 17 PM" src="https://user-images.githubusercontent.com/44684815/220556336-e52f86e2-1981-4ce8-bc97-88d39f2a6905.png">
+
+--이 빨간 글짜를 누르면 contextmenu가 나온다. 이 메뉴에 "Subscribe", "Unsubscribe" 버튼들이 나온다. "Subscribe"를 누르면 나에 대한 subscriber 수가 증가하고 반대로 "Unsubscribe"를 누르면 subscribe 수가 줄어든다.
+
+--상황에 따라 빨간 글짜가 바뀜.
+
+***
+
+## 
+
 
 
