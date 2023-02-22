@@ -14,9 +14,7 @@
   
       .infoAndUpNext{
           flex-direction: row;
-          
           margin: 12px 0;
           
       }
-      
-} 
+  } 
