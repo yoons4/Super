@@ -71,7 +71,24 @@
 
 ***
 
-## 
+## Share, Save, Report
+
+--내꺼와 진짜 유투브 엡사이트의 사이에서 이 기능들의 특징은 거이 차이가 없다. 왜냐하면 그것들을 누를 때마다 Modal Menu가 나오기 때문이다. 
+
+1. Share: <img width="1440" alt="Screenshot 2023-02-22 at 5 04 13 PM" src="https://user-images.githubusercontent.com/44684815/220559287-8d39e0a6-92e5-47f9-9375-6cc9f3142366.png">
+
+2. Save (Save to Playlist): <img width="1440" alt="Screenshot 2023-02-22 at 5 04 33 PM" src="https://user-images.githubusercontent.com/44684815/220559615-9cdea60c-be0e-4be7-9822-093f43e7f059.png">
+
+3. Report: <img width="768" alt="Screenshot 2023-02-22 at 5 06 54 PM" src="https://user-images.githubusercontent.com/44684815/220559873-9b56a827-81e2-4808-8ec5-d93750df70c5.png">
+
+--게다가 이런 <img width="35" alt="Screenshot 2023-02-22 at 5 07 43 PM" src="https://user-images.githubusercontent.com/44684815/220560026-25dc62be-eb25-46ef-85cc-a2154eec22f9.png"> 버튼을 누르면 ContextMenu가 나와서 
+
+
+***
+
+## HoverVideoPlayer
+
+--
 
 
 
