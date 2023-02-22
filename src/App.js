@@ -300,9 +300,9 @@ export default function App(){
                 <i className = "fas fa-ellipsis-v"></i>
         </div>
         </header>
-  <section className = "player">
-        <video src = {videoSangha} controls autoPlay muted></video>
-      </section>
+        <section className = "player">
+                <video src = {videoSangha} controls autoPlay muted></video>
+        </section>
   <div className = "infoAndUpNext">
         <section className = "info">
                 <div className = "metadata">
@@ -331,15 +331,15 @@ export default function App(){
                         </div>
                         <li>
                                 <button onClick = {shareModal}><i className = "fas fa-share"></i><span>Share</span></button>
-        <ShareFunction openValue = {modalIsShare} closeFunction = {notShareModal} />
+                                <ShareFunction openValue = {modalIsShare} closeFunction = {notShareModal} />
                         </li>
                         <li>
                                 <button onClick = {saveModal}><i className = "fas fa-plus"></i><span>Save</span></button>
-        <SaveFunction openValue = {modalIsSave} closeFunction = {notSaveModal} />
+                                <SaveFunction openValue = {modalIsSave} closeFunction = {notSaveModal} />
                        </li>
                         <li>
-        <button onClick = {openModal}><i className = "fab fa-font-awesome-flag"></i><span>Report</span></button>
-        <SideFunction openValue = {modalIsOpen} closeFunction = {closeModal} />
+                                 <button onClick = {openModal}><i className = "fab fa-font-awesome-flag"></i><span>Report</span></button>
+                                <SideFunction openValue = {modalIsOpen} closeFunction = {closeModal} />
                         </li>
                 </ul>
                 <div className = "channel">
