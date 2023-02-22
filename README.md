@@ -42,3 +42,7 @@
 
 ***
 
+## I like this / I dislike this.
+
+--나는 이 진짜 버튼처럼 생긴 버튼을 만들었어요.
+
