@@ -5,22 +5,22 @@
 
 ***
 
-### 유투브 해더
+## 유투브 해더
 
 --첫번째는 유투브 해더가 있었다. 기능이 없기는 하나 모든 유투브 엡사이트의 CSS Style의 기본 하나다. 쉽게 말하자면 자신에 대한 표현이다.
 <img width="1439" alt="Screenshot 2023-02-22 at 3 11 50 PM" src="https://user-images.githubusercontent.com/44684815/220537846-1dfdc82b-f920-4118-98b8-7451790e26b8.png">
 
 ***
 
-### 유투브 비디오
+## 유투브 비디오
 
 --비디오 이름은 "VID-20220119-WA0027 (1).mp4". 
 
 ***
 
-### 페이지 크기
-***
+## 페이지 크기
 
+***
 --그리고 Responsive Web Design에 대한 Youtube sample website의 페이지 크기 규칙이 있다.
 
     @media only screen and (min-width: 768px){
