@@ -23,16 +23,16 @@
         }
     }
     
--만약 내가 그 엡사이트 페이지 넓이 (min-width)를 768px보다 더 줄인다면 비디오 아래에 있는 코드 section들의 위치 순서가 세로로 줄 쓰게된다.
+--만약 내가 그 엡사이트 페이지 넓이 (min-width)를 768px보다 더 줄인다면 비디오 아래에 있는 코드 section들의 위치 순서가 세로로 줄 쓰게된다.
+
 <img width="751" alt="Screenshot 2023-02-22 at 3 40 16 PM" src="https://user-images.githubusercontent.com/44684815/220542761-9ae69735-ccd9-4387-8494-ee62cfe81b09.png">
  
 
 
 
--그 반대로 앱사이트의 넒이가 768px이거나 보다 더 큰다면 section들의 위치 순서가 가로로 정리 되어진다.
+--그 반대로 앱사이트의 넒이가 768px이거나 보다 더 큰다면 section들의 위치 순서가 가로로 정리 되어진다.
+
 <img width="1440" alt="Screenshot 2023-02-22 at 3 39 41 PM" src="https://user-images.githubusercontent.com/44684815/220542653-6542cf44-b989-43a9-b49f-0b3289a2f976.png">
-
-
 
 ***
 
