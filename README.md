@@ -14,7 +14,11 @@
 
 ## 유투브 비디오
 
---비디오 이름은 "VID-20220119-WA0027 (1).mp4". 
+--비디오 이름은 "VID-20220119-WA0027 (1).mp4". 이 페이지를 열자
+
+    <section className = "player">
+        <video src = {videoSangha} controls autoPlay muted></video>
+    </section>
 
 ***
 
