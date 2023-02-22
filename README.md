@@ -10,11 +10,10 @@
 
 --그리고 Responsive Web Design에 대한 페이지 크기 규칙이 있다.
 
-  @media only screen and (min-width: 768px){
-  
-      .infoAndUpNext{
-          flex-direction: row;
-          margin: 12px 0;
-          
-      }
-  } 
+@media only screen and (min-width: 768px){
+    .infoAndUpNext{
+        flex-direction: row;
+        margin: 12px 0;
+    }
+}
+
