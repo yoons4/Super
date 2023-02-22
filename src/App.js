@@ -19,7 +19,7 @@ const customStyles = {
                 bottom: 'auto',
                 marginRight: '-50%',
                 transform: 'translate(-50%, -50%)',
-    width: '50%',
+    		width: '50%',
         },
 };
 
@@ -255,28 +255,28 @@ export default function App(){
   function firstHandle(e){
         var x = e.clientX;
         var y = e.clientY;
-  showMenu({
+  	showMenu({
                 position: {x , y},
                 id: "first_identity"
         });
   }
 
   function secondHandle(e){
-  var x = e.clientX;
-  var y = e.clientY;
-  showMenu({
-    position: {x, y},
-    id: "second_identity"
-  });
+ 	 var x = e.clientX;
+  	 var y = e.clientY;
+ 	 showMenu({
+   		 position: {x, y},
+   		 id: "second_identity"
+ 	 });
   }
 
   function thirdHandle(e){
-  var x = e.clientX;
-  var y = e.clientY;
-  showMenu({
-    position: {x, y},
-    id: "third_identity"
-  });
+  	var x = e.clientX;
+  	var y = e.clientY;
+  	showMenu({
+    		position: {x, y},
+    		id: "third_identity"
+  	});
   }
 
   function alterSubscribe(e){
@@ -331,15 +331,15 @@ export default function App(){
                         </div>
                         <li>
                                 <button onClick = {shareModal}><i className = "fas fa-share"></i><span>Share</span></button>
-        <ShareFunction openValue = {modalIsShare} closeFunction = {notShareModal} styleFunction = {afterOpenModal} />
+        <ShareFunction openValue = {modalIsShare} closeFunction = {notShareModal} />
                         </li>
                         <li>
                                 <button onClick = {saveModal}><i className = "fas fa-plus"></i><span>Save</span></button>
-        <SaveFunction openValue = {modalIsSave} closeFunction = {notSaveModal} styleFunction = {afterOpenModal} />
-                        </li>
+        <SaveFunction openValue = {modalIsSave} closeFunction = {notSaveModal} />
+                       </li>
                         <li>
         <button onClick = {openModal}><i className = "fab fa-font-awesome-flag"></i><span>Report</span></button>
-        <SideFunction openValue = {modalIsOpen} closeFunction = {closeModal} styleFunction = {afterOpenModal} />
+        <SideFunction openValue = {modalIsOpen} closeFunction = {closeModal} />
                         </li>
                 </ul>
                 <div className = "channel">
@@ -364,14 +364,14 @@ export default function App(){
                 <span className = "title">Up next</span>
                 <ul>
                         <li className = "item">
-        <FirstComponent />                                    
+        			<FirstComponent />                                    
                                 <div className = "info">
                                         <span className = "title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발
                                         입문자편 강의를 시작합니다 $$ (HTML, CSS, Javascript, + 실전 프로젝트)</span>
                                         <span className = "name">드림코딩 by 엘리</span>
                                         <span className = "views">82K views</span>
                                 </div>
-        <div>
+        			<div>
                                 <ContextMenuTrigger id="first_identity">
                                         <button className = "moreBtn" onClick = {firstHandle}><i className = "fas fa-ellipsis-v"></i></button>
                                 </ContextMenuTrigger>
@@ -380,15 +380,15 @@ export default function App(){
                                         <MenuItem>Add to queue</MenuItem>
                                         <MenuItem>Save to watch later</MenuItem>
                                         <MenuItem onClick = {shareFirstModal}>Share</MenuItem>
-          <ShareFunction openValue = {modalFirstShare} closeFunction = {notShareFirstModal} styleFunction = {afterOpenModal} />
+          				<ShareFunction openValue = {modalFirstShare} closeFunction = {notShareFirstModal} styleFunction = {afterOpenModal} />
                                         <MenuItem onClick = {saveFirstModal}>Save to playlist</MenuItem>
-          <SaveFunction openValue = {modalSaveFirst} closeFunction = {notSaveFirstModal} styleFunction = {afterOpenModal} />
+          				<SaveFunction openValue = {modalSaveFirst} closeFunction = {notSaveFirstModal} styleFunction = {afterOpenModal} />
                                         <MenuItem>Not interested</MenuItem>
                                         <MenuItem>Don't recommend channel</MenuItem>
-          <MenuItem onClick = {openFirstModal}>Report</MenuItem>
-          <SideFunction openValue = {modalFirstOpen} closeFunction = {closeFirstModal} styleFunction = {afterOpenModal} />
+          				<MenuItem onClick = {openFirstModal}>Report</MenuItem>
+         				<SideFunction openValue = {modalFirstOpen} closeFunction = {closeFirstModal} styleFunction = {afterOpenModal} />
                                 </ContextMenu>
-        </div>
+        			</div>
                         </li>
                         <li className = "item">
                                 <SecondComponent />
@@ -405,13 +405,13 @@ export default function App(){
                                         <MenuItem>Add to queue</MenuItem>
                                         <MenuItem>Save to watch later</MenuItem>
                                         <MenuItem onClick = {shareSecondModal}>Share</MenuItem>
-          <ShareFunction openValue = {modalSecondShare} closeFunction = {notShareSecondModal} styleFunction = {afterOpenModal} />
+          				<ShareFunction openValue = {modalSecondShare} closeFunction = {notShareSecondModal} styleFunction = {afterOpenModal} />
                                         <MenuItem onClick = {saveSecondModal}>Save to playlist</MenuItem>
-          <SaveFunction openValue = {modalSaveSecond} closeFunction = {notSaveSecondModal} styleFunction = {afterOpenModal} />
+          				<SaveFunction openValue = {modalSaveSecond} closeFunction = {notSaveSecondModal} styleFunction = {afterOpenModal} />
                                         <MenuItem>Not interested</MenuItem>
                                         <MenuItem>Don't recommend channel</MenuItem>
-          <MenuItem onClick = {openSecondModal}>Report</MenuItem>
-          <SideFunction openValue = {modalSecondOpen} closeFunction = {closeSecondModal} styleFunction = {afterOpenModal} />
+          				<MenuItem onClick = {openSecondModal}>Report</MenuItem>
+          				<SideFunction openValue = {modalSecondOpen} closeFunction = {closeSecondModal} styleFunction = {afterOpenModal} />
                                 </ContextMenu>
                         </li>
                         <li className = "item">
@@ -429,14 +429,14 @@ export default function App(){
                                         <MenuItem>Add to queue</MenuItem>
                                         <MenuItem>Save to watch later</MenuItem>
                                         <MenuItem onClick = {shareThirdModal}>Share</MenuItem>
-          <ShareFunction openValue = {modalThirdShare} closeFunction = {notShareThirdModal} styleFunction = {afterOpenModal} />
+          				<ShareFunction openValue = {modalThirdShare} closeFunction = {notShareThirdModal} styleFunction = {afterOpenModal} />
                                         <MenuItem onClick = {saveThirdModal}>Save to playlist</MenuItem>
-          <SaveFunction openValue = {modalSaveThird} closeFunction = {notSaveThirdModal} styleFunction = {afterOpenModal} />
+          				<SaveFunction openValue = {modalSaveThird} closeFunction = {notSaveThirdModal} styleFunction = {afterOpenModal} />
                                         <MenuItem>Not interested</MenuItem>
                                         <MenuItem>Don't recommend channel</MenuItem>
-          <MenuItem onClick = {openThirdModal}>Report</MenuItem>
-          <SideFunction openValue = {modalThirdOpen} closeFunction = {closeThirdModal} styleFunction = {afterOpenModal} />
-        </ContextMenu>
+          				<MenuItem onClick = {openThirdModal}>Report</MenuItem>
+          				<SideFunction openValue = {modalThirdOpen} closeFunction = {closeThirdModal} styleFunction = {afterOpenModal} />
+        			</ContextMenu>
                        </li>
                 </ul>
         </section>
