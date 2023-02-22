@@ -54,7 +54,9 @@
 <img width="173" alt="Screenshot 2023-02-22 at 4 38 29 PM" src="https://user-images.githubusercontent.com/44684815/220553957-acb738db-e2c4-4c11-a4fc-8c66b21edcd0.png">
 
 --파란색 버튼은 "I like this" button. 
+
 --빨간색 버튼은 "I displike this" button.
+
 --버튼들 사이에는 숫자가 있는데 이 비디오에 찬성하는 사람들의 수를 나타냄.
 
 ***
