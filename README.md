@@ -20,7 +20,6 @@
 
 ## 페이지 크기
 
-***
 --그리고 Responsive Web Design에 대한 Youtube sample website의 페이지 크기 규칙이 있다.
 
     @media only screen and (min-width: 768px){
