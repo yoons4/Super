@@ -90,7 +90,7 @@
 
 ## HoverVideoPlayer
 
---
+--Youtube sample website에서 마우스가 비디오보다 작은 그림들 위에 있다면 저절로 그림에 해당되는 비디오가 움직인다.
 
 
 
