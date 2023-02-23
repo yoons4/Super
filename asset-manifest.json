@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/youtube-website-version-1/static/css/main.baf349d6.css",
-    "main.js": "/youtube-website-version-1/static/js/main.04b56d5d.js",
+    "main.css": "/youtube-website-version-1/static/css/main.7433da93.css",
+    "main.js": "/youtube-website-version-1/static/js/main.69ff046b.js",
     "static/js/787.da6564fd.chunk.js": "/youtube-website-version-1/static/js/787.da6564fd.chunk.js",
     "static/media/Kingdom Hearts - 'Aqua's Theme' - ORIGINAL LYRICS - Lizz Robinett & @Dysergy.mp4": "/youtube-website-version-1/static/media/Kingdom Hearts - 'Aqua's Theme' - ORIGINAL LYRICS - Lizz Robinett & @Dysergy.06b40aa9feffd0026870.mp4",
     "static/media/VID-20220119-WA0027 (1).mp4": "/youtube-website-version-1/static/media/VID-20220119-WA0027 (1).97470553f157ffb62ad8.mp4",
@@ -12,12 +12,12 @@
     "static/media/roxas.png": "/youtube-website-version-1/static/media/roxas.8bb47933f6840965798d.png",
     "static/media/aqua.png": "/youtube-website-version-1/static/media/aqua.e53bb5403ccf838eb6f2.png",
     "index.html": "/youtube-website-version-1/index.html",
-    "main.baf349d6.css.map": "/youtube-website-version-1/static/css/main.baf349d6.css.map",
-    "main.04b56d5d.js.map": "/youtube-website-version-1/static/js/main.04b56d5d.js.map",
+    "main.7433da93.css.map": "/youtube-website-version-1/static/css/main.7433da93.css.map",
+    "main.69ff046b.js.map": "/youtube-website-version-1/static/js/main.69ff046b.js.map",
     "787.da6564fd.chunk.js.map": "/youtube-website-version-1/static/js/787.da6564fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.baf349d6.css",
-    "static/js/main.04b56d5d.js"
+    "static/css/main.7433da93.css",
+    "static/js/main.69ff046b.js"
   ]
 }
