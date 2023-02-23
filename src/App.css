@@ -61,6 +61,13 @@ span {
         background-color: white;
 }
 
+.hoverVideoStyle{
+    flex: 1 1 35%;
+    margin-right: 12px;
+    z-index: 0;
+}
+
+
 
 /* Header */
 header{
@@ -88,6 +95,7 @@ header .icons .fa-search {
     top: 0;
     text-align: center;
     background-color: black;
+    z-index: 1;
 }
 
 

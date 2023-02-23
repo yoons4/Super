@@ -2,14 +2,18 @@ import React from "react"
 import './App.css'
 import {useState, useEffect} from 'react';
 import Modal from 'react-modal';
-
-import imageSangha from "./image/Sangha.jpeg";
-import videoSangha from "./videos/VID-20220119-WA0027 (1).mp4";
+import HoverVideoPlayer from 'react-hover-video-player';
 import { ContextMenu, MenuItem, ContextMenuTrigger, showMenu} from "react-contextmenu";
 
-import FirstComponent from "./firstFunction.js";
-import SecondComponent from "./secondFunction.js";
-import ThirdComponent from "./thirdFunction.js";
+
+import imageRoxas from "./image/roxas.png";
+import videoRoxas from "./videos/'Roxas's Theme' (Kingdom Hearts) Original Lyrics by Lizz Robinett.mp4";
+import imageSangha from "./image/Sangha.jpeg";
+import videoSangha from "./videos/VID-20220119-WA0027 (1).mp4";
+import imageTerra from "./image/terra.png";
+import videoRiku from "./videos/Kingdom Hearts - 'Riku's Theme' - ORIGINAL LYRICS - Lizz Robinett.mp4";
+import imageAqua from "./image/aqua.png";
+import videoAqua from "./videos/Kingdom Hearts - 'Aqua's Theme' - ORIGINAL LYRICS - Lizz Robinett & @Dysergy.mp4";
 
 const customStyles = {
         content: {
@@ -22,6 +26,31 @@ const customStyles = {
     		width: '50%',
         },
 };
+
+function FirstComponent(){
+	return(
+		<div className = "hoverVideoStyle">
+                <HoverVideoPlayer videoSrc = {videoAqua} pausedOverlay = { <img src = {imageAqua} alt = "first" style = {{width: '100%', height: '100%', objectFit: 'cover', position: 'relative'}} /> } />
+                </div>
+	);
+}
+
+function SecondComponent(){
+        return(
+                <div className = "hoverVideoStyle">
+                <HoverVideoPlayer videoSrc = {videoRoxas} pausedOverlay = { <img src = {imageRoxas} alt = "second" style = {{width: '100%', height: '100%', objectFit: 'cover'}} /> } />
+                </div>
+        );
+}
+
+function ThirdComponent(){
+        return(
+                <div className = "hoverVideoStyle">
+                <HoverVideoPlayer videoSrc = {videoRiku} pausedOverlay = { <img src = {imageTerra} alt = "third" style = {{width: '100%', height: '100%', objectFit: 'cover'}} /> } />
+                </div>
+        );
+}
+
 
 function SideFunction ({openValue, closeFunction, styleFunction}){
         return(
@@ -46,7 +75,6 @@ function SideFunction ({openValue, closeFunction, styleFunction}){
   
                                         <p>Flagged videos and users are reviewed by YouTube staff 24 hours a day, 7 days a week to determine whether they violate Community Guidelines. Accounts are penalized for Community Guidelines violations, and serious or repeated violations can lead to account termination.</p>
                                         <button onClick = {closeFunction}>Cancel</button>
-                                        <button>Next</button>
                                 </form>
                         </Modal>
                 </div>
@@ -93,120 +121,216 @@ export default function App(){
 
   function openModal() {
     setIsOpen(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
   
   function closeModal() {
     setIsOpen(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
   
   const [modalFirstOpen, setFirstOpen] = useState(false);
 
   function openFirstModal() {
     setFirstOpen(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function closeFirstModal() {
     setFirstOpen(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalSecondOpen, setSecondOpen] = useState(false);
 
   function openSecondModal() {
     setSecondOpen(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function closeSecondModal() {
     setSecondOpen(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalThirdOpen, setThirdOpen] = useState(false);
 
   function openThirdModal(){
     setThirdOpen(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function closeThirdModal(){
     setThirdOpen(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalIsShare, setIsShare] = useState(false);
 
   function shareModal(){
     setIsShare(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function notShareModal(){
     setIsShare(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalFirstShare, setFirstShare] = useState(false);
 
   function shareFirstModal() {
     setFirstShare(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function notShareFirstModal() {
     setFirstShare(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalSecondShare, setSecondShare] = useState(false);
 
   function shareSecondModal() {
     setSecondShare(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function notShareSecondModal() {
     setSecondShare(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalThirdShare, setThirdShare] = useState(false);
 
   function shareThirdModal(){
     setThirdShare(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function notShareThirdModal(){
     setThirdShare(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalIsSave, setIsSave] = useState(false);
 
   function saveModal(){
     setIsSave(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function notSaveModal(){
     setIsSave(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalSaveFirst, saveFirst] = useState(false);
 
   function saveFirstModal(){
     saveFirst(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function notSaveFirstModal(){
     saveFirst(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalSaveSecond, saveSecond] = useState(false);
 
   function saveSecondModal(){
     saveSecond(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function notSaveSecondModal(){
     saveSecond(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   const [modalSaveThird, saveThird] = useState(false);
 
   function saveThirdModal(){
     saveThird(true);
+    const openStyleVideo = document.querySelector(".player");
+    openStyleVideo.style.zIndex = 0;
+    const openStyleHover = document.querySelector(".hoverVideoStyle");
+    openStyleHover.style.zIndex = -1;
   }
 
   function notSaveThirdModal(){
     saveThird(false);
+    const closeStyleVideo = document.querySelector(".player");
+    closeStyleVideo.style.zIndex = 1;
+    const closeStyleHover = document.querySelector(".hoverVideoStyle");
+    closeStyleHover.style.zIndex = 0;
   }
 
   function afterOpenModal() {
