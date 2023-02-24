@@ -61,7 +61,7 @@
 
 ***
 
-## Subscribe button 역활
+## Subscribe button 역할
 
 --나는 이제 "Subscribe" 버튼을 만들었는데 .....<img width="462" alt="Screenshot 2023-02-22 at 4 50 17 PM" src="https://user-images.githubusercontent.com/44684815/220556336-e52f86e2-1981-4ce8-bc97-88d39f2a6905.png">
 
