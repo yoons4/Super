@@ -61,7 +61,7 @@
 
 ***
 
-## Subscribe button
+## Subscribe button 역활
 
 --나는 이제 "Subscribe" 버튼을 만들었는데 .....<img width="462" alt="Screenshot 2023-02-22 at 4 50 17 PM" src="https://user-images.githubusercontent.com/44684815/220556336-e52f86e2-1981-4ce8-bc97-88d39f2a6905.png">
 
@@ -71,7 +71,7 @@
 
 ***
 
-## Share, Save, Report
+## Share, Save, Report 버튼들
 
 --내꺼와 진짜 유투브 엡사이트의 사이에서 이 기능들의 특징은 거이 차이가 없다. 왜냐하면 그것들을 누를 때마다 Modal Menu가 나오기 때문이다. 
 
@@ -88,7 +88,7 @@
 
 ***
 
-## HoverVideoPlayer
+## HoverVideoPlayer 기능
 
 --Youtube sample website에서 마우스가 비디오보다 작은 그림들 위에 있다면 저절로 그림에 해당되는 비디오가 움직인다.
 
