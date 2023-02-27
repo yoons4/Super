@@ -30,7 +30,7 @@ const customStyles = {
 function FirstComponent(){
 	return(
 		<div className = "hoverVideoStyle">
-                <HoverVideoPlayer videoSrc = {videoAqua} pausedOverlay = { <img src = {imageAqua} alt = "first" style = {{width: '100%', height: '100%', objectFit: 'cover', position: 'relative'}} /> } />
+                <HoverVideoPlayer videoSrc = {videoAqua} pausedOverlay = { <img src = {imageAqua} alt = "first" style = {{width: '100%', height: '100%', objectFit: 'cover'}} /> } />
                 </div>
 	);
 }
@@ -114,6 +114,20 @@ function ShareFunction ({openValue, closeFunction, styleFunction}){
         );
 }
 
+const decreasezIndex = () => {
+        const openStyleVideo = document.querySelector(".player");
+        openStyleVideo.style.zIndex = 0;
+        const openStyleHover = document.querySelector(".hoverVideoStyle");
+        openStyleHover.style.zIndex = -1;
+};
+
+const increasezIndex = () => {
+        const closeStyleVideo = document.querySelector(".player");
+        closeStyleVideo.style.zIndex = 1;
+        const closeStyleHover = document.querySelector(".hoverVideoStyle");
+        closeStyleHover.style.zIndex = 0;
+};
+
 export default function App(){
   let subtitle;
 
@@ -121,216 +135,144 @@ export default function App(){
 
   function openModal() {
     setIsOpen(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
   
   function closeModal() {
     setIsOpen(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
   
   const [modalFirstOpen, setFirstOpen] = useState(false);
 
   function openFirstModal() {
     setFirstOpen(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function closeFirstModal() {
     setFirstOpen(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalSecondOpen, setSecondOpen] = useState(false);
 
   function openSecondModal() {
     setSecondOpen(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function closeSecondModal() {
     setSecondOpen(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalThirdOpen, setThirdOpen] = useState(false);
 
   function openThirdModal(){
     setThirdOpen(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function closeThirdModal(){
     setThirdOpen(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalIsShare, setIsShare] = useState(false);
 
   function shareModal(){
     setIsShare(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function notShareModal(){
     setIsShare(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalFirstShare, setFirstShare] = useState(false);
 
   function shareFirstModal() {
     setFirstShare(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function notShareFirstModal() {
     setFirstShare(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalSecondShare, setSecondShare] = useState(false);
 
   function shareSecondModal() {
     setSecondShare(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function notShareSecondModal() {
     setSecondShare(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalThirdShare, setThirdShare] = useState(false);
 
   function shareThirdModal(){
     setThirdShare(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function notShareThirdModal(){
     setThirdShare(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalIsSave, setIsSave] = useState(false);
 
   function saveModal(){
     setIsSave(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function notSaveModal(){
     setIsSave(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalSaveFirst, saveFirst] = useState(false);
 
   function saveFirstModal(){
     saveFirst(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function notSaveFirstModal(){
     saveFirst(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalSaveSecond, saveSecond] = useState(false);
 
   function saveSecondModal(){
     saveSecond(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function notSaveSecondModal(){
     saveSecond(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   const [modalSaveThird, saveThird] = useState(false);
 
   function saveThirdModal(){
     saveThird(true);
-    const openStyleVideo = document.querySelector(".player");
-    openStyleVideo.style.zIndex = 0;
-    const openStyleHover = document.querySelector(".hoverVideoStyle");
-    openStyleHover.style.zIndex = -1;
+    decreasezIndex();
   }
 
   function notSaveThirdModal(){
     saveThird(false);
-    const closeStyleVideo = document.querySelector(".player");
-    closeStyleVideo.style.zIndex = 1;
-    const closeStyleHover = document.querySelector(".hoverVideoStyle");
-    closeStyleHover.style.zIndex = 0;
+    increasezIndex();
   }
 
   function afterOpenModal() {
