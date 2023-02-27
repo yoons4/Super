@@ -48,6 +48,10 @@ span {
         background-color: white;
 }
 
+.menuItem:hover{
+	color: red;
+}
+
 .smallGet {
         display: flex;
         flex-direction: column;
@@ -234,7 +238,7 @@ body > .info {
 
 /* Up Next*/
 .upNext{
-    padding: 0 12px
+    padding: 0 12px;
 }
 
 .upNext > .title {
@@ -276,7 +280,6 @@ body > .info {
     font-size: 10px;
     color: darkgrey;
 }
-
 
 .infoAndUpNext {
     display: flex;

@@ -5,7 +5,6 @@ import Modal from 'react-modal';
 import HoverVideoPlayer from 'react-hover-video-player';
 import { ContextMenu, MenuItem, ContextMenuTrigger, showMenu} from "react-contextmenu";
 
-
 import imageRoxas from "./image/roxas.png";
 import videoRoxas from "./videos/'Roxas's Theme' (Kingdom Hearts) Original Lyrics by Lizz Robinett.mp4";
 import imageSangha from "./image/Sangha.jpeg";
@@ -51,11 +50,10 @@ function ThirdComponent(){
         );
 }
 
-
-function SideFunction ({openValue, closeFunction, styleFunction}){
+function SideFunction ({openValue, closeFunction}){
         return(
                 <div>
-                        <Modal isOpen = {openValue} onAfterOpen = {styleFunction} onRequestClose = {closeFunction} style = {customStyles} contentLabel = "Example Modal">
+                        <Modal isOpen = {openValue} onRequestClose = {closeFunction} style = {customStyles} contentLabel = "Example Modal">
                                 <h1>Report video</h1>
                                 <label for = "problemReport">What is this video's problem?</label><br />
                                 <form>
@@ -81,16 +79,16 @@ function SideFunction ({openValue, closeFunction, styleFunction}){
         );
 }
 
-function SaveFunction ({openValue, closeFunction, styleFunction}){
+function SaveFunction ({openValue, closeFunction}){
         return(
                 <div>
-                        <Modal isOpen = {openValue} onAfterOpen = {styleFunction} onRequestClose = {closeFunction} style = {customStyles} contentLabel = "Example Modal">
+                        <Modal isOpen = {openValue} onRequestClose = {closeFunction} style = {customStyles} contentLabel = "Example Modal">
                                 <h1>Save To...</h1>
                                 <form>
                                         <ul>
-            <li><input type = "checkbox" /><label>Watch later</label></li>
-            <li><input type = "checkbox" /><label>adf</label></li>
-          </ul>
+				            <li><input type = "checkbox" /><label>Watch later</label></li>
+ 				            <li><input type = "checkbox" /><label>adf</label></li>
+  				        </ul>
                                 </form>
                                 <button onClick = {closeFunction}>Cancel</button>
                         </Modal>
@@ -98,15 +96,15 @@ function SaveFunction ({openValue, closeFunction, styleFunction}){
         );
 }
 
-function ShareFunction ({openValue, closeFunction, styleFunction}){
+function ShareFunction ({openValue, closeFunction}){
         return(
                 <div>
-                        <Modal isOpen = {openValue} onAfterOpen = {styleFunction} onRequestClose = {closeFunction} style = {customStyles} contentLabel = "Example Modal">
+                        <Modal isOpen = {openValue} onRequestClose = {closeFunction} style = {customStyles} contentLabel = "Example Modal">
                                 <h1>Share</h1>
                                 <form>
-          <div style = {{display: "block", border: "1px gray solid", borderRadius: "10%", height: "50px"}}>
-            <input type = "text" style = {{border: "1px white solid", paddingTop: "25px"}} value = "https://youtu.be/Sn4k1yIDUQ0" /><button style = {{float: "right"}}>Copy</button>
-          </div>
+          				<div style = {{display: "block", border: "1px gray solid", borderRadius: "10%", height: "50px"}}>
+            					<input type = "text" style = {{border: "1px white solid", paddingTop: "25px"}} value = "https://youtu.be/Sn4k1yIDUQ0" /><button style = {{float: "right"}}>Copy</button>
+          				</div>
                                 </form>
         <button onClick = {closeFunction}>Cancel</button>
                         </Modal>
@@ -129,8 +127,7 @@ const increasezIndex = () => {
 };
 
 export default function App(){
-  let subtitle;
-
+ 
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -275,10 +272,6 @@ export default function App(){
     increasezIndex();
   }
 
-  function afterOpenModal() {
-    subtitle.style.color = '#f00';
-  }
- 
   const [allowOrNot, expandLabel] = useState(true);
 
   const [favorNumber, feedback] = useState(0);
@@ -380,7 +373,7 @@ export default function App(){
                         <div className = "titleAndButton">
                                 <span className = {allowOrNot ? 'title clamp' : 'title'}>Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라만들기  | 프론트엔드 개발자 입문편: HTML, CSS, JavaScript 드림코딩과 함께하는 프론트엔드 실전 입문편</span>
                                 <button className = "moreBtn" onClick = {expandReduceLabel}><i className = {allowOrNot ? 'fas fa-caret-down' : 'fas fa-caret-up'}></i></button>
-                        </div>
+                       </div>
                         <span className = "views">1M views 1 month ago</span>
                 </div>
                 <ul className = "actions">
@@ -405,7 +398,7 @@ export default function App(){
                        </li>
                         <li>
                                  <button onClick = {openModal}><i className = "fab fa-font-awesome-flag"></i><span>Report</span></button>
-                                <SideFunction openValue = {modalIsOpen} closeFunction = {closeModal} />
+                                 <SideFunction openValue = {modalIsOpen} closeFunction = {closeModal} />
                         </li>
                 </ul>
                 <div className = "channel">
@@ -446,13 +439,13 @@ export default function App(){
                                         <MenuItem>Add to queue</MenuItem>
                                         <MenuItem>Save to watch later</MenuItem>
                                         <MenuItem onClick = {shareFirstModal}>Share</MenuItem>
-          				<ShareFunction openValue = {modalFirstShare} closeFunction = {notShareFirstModal} styleFunction = {afterOpenModal} />
+          				<ShareFunction openValue = {modalFirstShare} closeFunction = {notShareFirstModal} />
                                         <MenuItem onClick = {saveFirstModal}>Save to playlist</MenuItem>
-          				<SaveFunction openValue = {modalSaveFirst} closeFunction = {notSaveFirstModal} styleFunction = {afterOpenModal} />
+          				<SaveFunction openValue = {modalSaveFirst} closeFunction = {notSaveFirstModal} />
                                         <MenuItem>Not interested</MenuItem>
                                         <MenuItem>Don't recommend channel</MenuItem>
           				<MenuItem onClick = {openFirstModal}>Report</MenuItem>
-         				<SideFunction openValue = {modalFirstOpen} closeFunction = {closeFirstModal} styleFunction = {afterOpenModal} />
+         				<SideFunction openValue = {modalFirstOpen} closeFunction = {closeFirstModal} />
                                 </ContextMenu>
         			</div>
                         </li>
@@ -471,13 +464,13 @@ export default function App(){
                                         <MenuItem>Add to queue</MenuItem>
                                         <MenuItem>Save to watch later</MenuItem>
                                         <MenuItem onClick = {shareSecondModal}>Share</MenuItem>
-          				<ShareFunction openValue = {modalSecondShare} closeFunction = {notShareSecondModal} styleFunction = {afterOpenModal} />
+          				<ShareFunction openValue = {modalSecondShare} closeFunction = {notShareSecondModal} />
                                         <MenuItem onClick = {saveSecondModal}>Save to playlist</MenuItem>
-          				<SaveFunction openValue = {modalSaveSecond} closeFunction = {notSaveSecondModal} styleFunction = {afterOpenModal} />
+          				<SaveFunction openValue = {modalSaveSecond} closeFunction = {notSaveSecondModal} />
                                         <MenuItem>Not interested</MenuItem>
                                         <MenuItem>Don't recommend channel</MenuItem>
           				<MenuItem onClick = {openSecondModal}>Report</MenuItem>
-          				<SideFunction openValue = {modalSecondOpen} closeFunction = {closeSecondModal} styleFunction = {afterOpenModal} />
+          				<SideFunction openValue = {modalSecondOpen} closeFunction = {closeSecondModal} />
                                 </ContextMenu>
                         </li>
                         <li className = "item">
@@ -495,13 +488,13 @@ export default function App(){
                                         <MenuItem>Add to queue</MenuItem>
                                         <MenuItem>Save to watch later</MenuItem>
                                         <MenuItem onClick = {shareThirdModal}>Share</MenuItem>
-          				<ShareFunction openValue = {modalThirdShare} closeFunction = {notShareThirdModal} styleFunction = {afterOpenModal} />
+          				<ShareFunction openValue = {modalThirdShare} closeFunction = {notShareThirdModal} />
                                         <MenuItem onClick = {saveThirdModal}>Save to playlist</MenuItem>
-          				<SaveFunction openValue = {modalSaveThird} closeFunction = {notSaveThirdModal} styleFunction = {afterOpenModal} />
+          				<SaveFunction openValue = {modalSaveThird} closeFunction = {notSaveThirdModal} />
                                         <MenuItem>Not interested</MenuItem>
                                         <MenuItem>Don't recommend channel</MenuItem>
           				<MenuItem onClick = {openThirdModal}>Report</MenuItem>
-          				<SideFunction openValue = {modalThirdOpen} closeFunction = {closeThirdModal} styleFunction = {afterOpenModal} />
+          				<SideFunction openValue = {modalThirdOpen} closeFunction = {closeThirdModal} />
         			</ContextMenu>
                        </li>
                 </ul>
